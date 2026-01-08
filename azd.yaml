@@ -1,0 +1,10 @@
+name: openipam-agent
+infra:
+  provider: bicep
+  path: infra
+services:
+  agent:
+    project: src/OpenIpam.Agent
+    language: dotnet
+    docker:
+      path: .
